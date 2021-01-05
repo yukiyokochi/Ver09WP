@@ -1,0 +1,142 @@
+*{
+  margin:0;
+}
+
+p,a{
+  font-family:'Hiragino Kaku Gothic ProN';
+  font-size:14px;
+  letter-spacing: 1px;
+  color:#2F2F2F;
+  line-height:28px;
+}
+
+a{
+  color:#0E406C;
+}
+
+header{
+  width:100%;
+  height:60px;
+  background-color:#fff;
+  opacity:1;
+  position:fixed;
+}
+
+.header-container{
+  width:90%;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+}
+.header-container .top-page{
+  display:block;
+  width:76px;
+  height:32px;
+  background-image:url('img/top-page.png');
+  background-position:center;
+  background-size:cover;
+  margin:14px 0 0 0;
+}
+
+.subsidy{
+  background-color:#ECF8F3;
+  width:100%;
+}
+
+.subsidy-container{
+  width:90%;
+  margin:0px auto;
+}
+
+.title{
+  font-size:14px;
+  font-weight:bold;
+  padding:50px 0 0 0;
+  text-align:center;
+}
+
+.first-p{
+  padding:110px 0 0 0;
+}
+.content-p{
+  margin:20px 0 0 ;
+}
+
+.last-p{
+  padding:0 0 50px 0;
+}
+
+.example-p{
+  margin:20px 0 5px;
+  font-size:12px;
+  line-height:20px;
+
+}
+
+.example-image1,
+.example-image2{
+  width:100%;
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding-top:23.4%;
+}
+
+
+.example-image1{
+  background-image:url('img/ex-1.png')
+}
+
+.example-image2{
+  background-image:url('img/ex-2.png')
+}
+
+
+@media screen and (min-width:768px){
+  .example-image1,
+  .example-image2{
+    width:500px;
+    height:117px;
+    padding-top:0;
+  }
+  .title{
+    font-size:18px;
+  }
+  p{
+    font-size:16px;
+  }
+  .example-p{
+    font-size:14px;
+    margin:30px 0 10px;
+
+  }
+  .content-p{
+    margin:30px 0 0 ;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .subsidy-container{
+    width:78%;
+    max-width:1024px;
+  }
+  header{
+    height:90px;
+  }
+  .header-container{
+    width:78%;
+    max-width:1024px;
+  }
+  .header-container .top-page{
+    width:117px;
+    height:50px;
+    background-image:url('img/top-page.png');
+    background-position:center;
+    background-size:cover;
+    margin:20px 0 0 0;
+  }
+
+  .first-p{
+    padding:150px 0 0 0;
+  }
+}
